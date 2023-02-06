@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46dce0f6-c3e0-4f8f-bfa5-9cd342e2da22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/javascript/users.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="2FWge9ebQFFDSX7QwcRemJhSv6Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/javascript" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\PhpChat\MyChat\php" />
+      <recent name="C:\Users\User\PhpChat\MyChat" />
+      <recent name="C:\Users\User\PhpChat\MyChat\php" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\CsvConverter\javascript" />
+      <recent name="C:\xampp\htdocs\CsvConverter" />
+      <recent name="C:\xampp\htdocs\PhpChat\MyChat\php" />
+      <recent name="C:\xampp\htdocs\PhpChat\MyChat" />
+      <recent name="C:\Users\User\PhpChat\MyChat\php" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="php" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="4000">
+      <method v="2">
+        <option name="LaunchBrowser.Before.Run" browser="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46dce0f6-c3e0-4f8f-bfa5-9cd342e2da22" name="Default Changelist" comment="" />
+      <created>1664613346264</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664613346264</updated>
+      <workItem from="1664613347323" duration="564000" />
+      <workItem from="1664622964079" duration="2491000" />
+      <workItem from="1664625890739" duration="5557000" />
+      <workItem from="1664808655610" duration="3749000" />
+      <workItem from="1664819056923" duration="2889000" />
+      <workItem from="1664890312628" duration="2493000" />
+      <workItem from="1664919414416" duration="3081000" />
+      <workItem from="1664961336431" duration="715000" />
+      <workItem from="1665164272479" duration="2822000" />
+      <workItem from="1665252331434" duration="633000" />
+      <workItem from="1668517484586" duration="1133000" />
+      <workItem from="1675699799201" duration="793000" />
+      <workItem from="1675701018737" duration="569000" />
+      <workItem from="1675701759206" duration="5237000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1675702552885">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1675702552885" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1668518624745">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1668518624745" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1675702701845">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1675702701845" />
+  </component>
+</project>
