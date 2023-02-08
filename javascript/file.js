@@ -1,7 +1,9 @@
-const form = document.querySelector(".signup form"),
+const form = document.querySelector(".upload form"),
 continueBtn = form.querySelector(".button input"),
 errorText = form.querySelector(".error-text");
 succesText = form.querySelector(".success-text");
+
+
 
 form.onsubmit = (e)=>{
     e.preventDefault();

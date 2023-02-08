@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46dce0f6-c3e0-4f8f-bfa5-9cd342e2da22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/department_table_display.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/refresh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/department_table_display.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/refresh.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/csv_files/import_department.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/file.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/file.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +22,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,19 +44,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/javascript" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\PhpChat\MyChat\php" />
-      <recent name="C:\Users\User\PhpChat\MyChat" />
-      <recent name="C:\Users\User\PhpChat\MyChat\php" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\CsvConverter\javascript" />
       <recent name="C:\xampp\htdocs\CsvConverter" />
       <recent name="C:\xampp\htdocs\PhpChat\MyChat\php" />
       <recent name="C:\xampp\htdocs\PhpChat\MyChat" />
+      <recent name="C:\Users\User\PhpChat\MyChat\php" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\PhpChat\MyChat\php" />
+      <recent name="C:\Users\User\PhpChat\MyChat" />
       <recent name="C:\Users\User\PhpChat\MyChat\php" />
     </key>
   </component>
@@ -70,7 +89,9 @@
       <workItem from="1668517484586" duration="1133000" />
       <workItem from="1675699799201" duration="793000" />
       <workItem from="1675701018737" duration="569000" />
-      <workItem from="1675701759206" duration="5237000" />
+      <workItem from="1675701759206" duration="6529000" />
+      <workItem from="1675861608235" duration="9406000" />
+      <workItem from="1675876689569" duration="17839000" />
     </task>
     <servers />
   </component>
@@ -82,10 +103,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1675702552885" />
+    <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1675707212462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1675707212462" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1668518624745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1668518624745" />
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1675883269985">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1675883269985" />
+    <state x="478" y="0" width="579" height="824" key="find.popup" timestamp="1675890781421">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="0" width="579" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1675890781421" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1675702701845">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
