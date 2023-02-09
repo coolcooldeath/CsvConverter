@@ -24,28 +24,82 @@ if(isset($_FILES)) {
             }
         }
         if ($fileChecked[$i]&&move_uploaded_file($_FILES['file']['tmp_name'][$i], $uploadFile[$i])) {
-            $successFiles++;
+
+            if(isDepartmentFile($uploadFile[$i])||isUserFile($uploadFile[$i])){
+                $successFiles++;
+            }
+            else
+                echo "Структура файлов неверна";
         } else {
             echo basename($_FILES['file']['name'][$i]) . "- недопустимый формат \n";
         }
 
+
+
+
     }
 
-
+    $filesInDb=0;
     if ($successFiles == $filesCount) {
         for ($i = 0; $i < count($_FILES['file']['name']); $i++) {
             $fileName = $path . "csv_files/" . basename($_FILES['file']['name'][$i]);
-            $query = "LOAD DATA INFILE '$fileName'
+
+
+            if(isDepartmentFile($fileName)){
+                print_r(isDepartmentFile($fileName));
+                $query = "LOAD DATA INFILE '$fileName'
                  INTO TABLE departments 
                  FIELDS TERMINATED BY ';' 
                  LINES TERMINATED BY '\n' 
                  IGNORE 1 LINES";
 
-           if(mysqli_query($conn,$query))
-               echo "true";
-           else
-               echo mysqli_error($conn) . "\n";
+                if(mysqli_query($conn,$query))
+                    $filesInDb++;
+                else
+                    echo mysqli_error($conn) . "\n";
+            }
+
+            if(isUserFile($fileName)){
+                $query = "LOAD DATA INFILE '$fileName'
+                 INTO TABLE users
+                 FIELDS TERMINATED BY ';' 
+                 LINES TERMINATED BY '\n' 
+                 IGNORE 1 LINES";
+
+                if(mysqli_query($conn,$query))
+                    $filesInDb++;
+                else
+                    echo mysqli_error($conn) . "\n";
+            }
+
         }
     }
+    echo "Uploaded " . $filesInDb . " files";
+}
+
+function isUserFile($fileName){
+
+    $fileContentArray= explode(";",file_get_contents($fileName));
+
+    $passwordStr = substr($fileContentArray[10],0,8);
+    if($fileContentArray[0]=="XML_ID"&&$fileContentArray[1]="LAST_NAME"&&$fileContentArray[2]="NAME"
+    &&$fileContentArray[3]=="SECOND_NAME" &&$fileContentArray[4]=="DEPARTMENT" &&$fileContentArray[5]=="WORK_POSITION"
+                &&$fileContentArray[6]=="EMAIL" &&$fileContentArray[7]=="MOBILE_PHONE" &&$fileContentArray[8]=="PHONE"
+                &&$fileContentArray[9]=="LOGIN" && $passwordStr=="PASSWORD")
+        return true;
+    else
+        return false;
+
+}
+
+function isDepartmentFile($fileName){
+    $fileContentArray= explode(";",file_get_contents($fileName));
+   $departmentStr = substr($fileContentArray[2],0,15);
+    if($fileContentArray[0]=="XML_ID"&&$fileContentArray[1]=="PARENT_XML_ID"&&$departmentStr=="NAME_DEPARTMENT")
+        return true;
+    else
+        return false;
+
+
 }
 ?>

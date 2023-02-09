@@ -6,6 +6,7 @@ url("\\fonts\\font.ttf")}
 *{
   margin: 0;
   padding: 0;
+  font-size: 15px;
   box-sizing: border-box;
   text-decoration: none;
   font-family:'font';
@@ -28,6 +29,16 @@ body{
 
 }
 
+.table-wrapper{
+  background: #ffffff;
+  max-width: 2000px;
+  width: 100%;
+  margin: 30px;
+  box-shadow: 0 0 228px 0 rgba(79, 30, 30, 0.1),
+  0 100px 100px -100px rgba(0, 0, 0, 0.5);
+
+}
+
 
 .form{
   padding: 45px 30px;
@@ -42,12 +53,12 @@ body{
   margin: 20px 0;
 }
 .form form .error-text{
-  color: #721c24;
+  color: #000000;
   padding: 8px 10px;
   text-align: center;
   border-radius: 5px;
-  background: #f8d7da;
-  border: 1px solid #f5c6cb;
+  background: #4d49d9;
+  border: 1px solid #14438a;
   margin-bottom: 10px;
   display: none;
 }

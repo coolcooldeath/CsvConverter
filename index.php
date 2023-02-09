@@ -32,7 +32,7 @@
     </section>
 </div>
 
-<div class="wrapper">
+<div class="table-wrapper">
         <div class='message-div message-div_hidden' id='message-div'></div>
     <section class="form">
     <div class="department-table">
@@ -41,9 +41,19 @@
 
 </div>
 
+<div class="table-wrapper">
+    <div class='message-div message-div_hidden' id='message-div'></div>
+    <section class="form">
+        <div class="user-table">
+        </div>
+    </section>
+
+</div>
+
 <script src="javascript/file.js"></script>
 <script src="javascript/refresh.js"></script>
 <script src="javascript/department_table_display.js"></script>
+<script src="javascript/user_table_display.js"></script>
 
 
 

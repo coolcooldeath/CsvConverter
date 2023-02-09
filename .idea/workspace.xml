@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46dce0f6-c3e0-4f8f-bfa5-9cd342e2da22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript/department_table_display.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/refresh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/department_table_display.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/refresh.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/user_table_display.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/user_table_display.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/file.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/csv_files/import_department.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/csv_files/import_users.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/department_table_display.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/department_table_display.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/file.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/file.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,17 +46,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\CsvConverter\javascript" />
-      <recent name="C:\xampp\htdocs\CsvConverter" />
-      <recent name="C:\xampp\htdocs\PhpChat\MyChat\php" />
-      <recent name="C:\xampp\htdocs\PhpChat\MyChat" />
-      <recent name="C:\Users\User\PhpChat\MyChat\php" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\PhpChat\MyChat\php" />
       <recent name="C:\Users\User\PhpChat\MyChat" />
       <recent name="C:\Users\User\PhpChat\MyChat\php" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\CsvConverter\javascript" />
+      <recent name="C:\xampp\htdocs\CsvConverter\php" />
+      <recent name="C:\xampp\htdocs\CsvConverter" />
+      <recent name="C:\xampp\htdocs\PhpChat\MyChat\php" />
+      <recent name="C:\xampp\htdocs\PhpChat\MyChat" />
     </key>
   </component>
   <component name="RunManager">
@@ -92,6 +90,7 @@
       <workItem from="1675701759206" duration="6529000" />
       <workItem from="1675861608235" duration="9406000" />
       <workItem from="1675876689569" duration="17839000" />
+      <workItem from="1675950235069" duration="7337000" />
     </task>
     <servers />
   </component>
@@ -119,9 +118,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="478" y="0" width="579" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1675890781421" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1675702701845">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1675951490507">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1675702701845" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1675951490507" />
   </component>
 </project>
