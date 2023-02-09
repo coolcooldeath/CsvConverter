@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if(xhr.readyState === XMLHttpRequest.DONE){
             if(xhr.status === 200){
                 data = xhr.response;
-                arr = prepareData(JSON.stringify(data));
+                arr = prepareData(JSON.stringify(data)); // просто создаю html и вывожу его
                 userTable.innerHTML = "";
                 var HTML = "<table border=1 width=100%><tr>" +
                     "<th>XML_ID</th><th>LAST_NAME</th><th>NAME</th>"+
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     xhr.send(formData);
 }, false);
 
-function replaceSymbols(str,...symbols){
+function replaceSymbols(str,...symbols){ // удаление символов которые мешают отображению
     let clearStr = str;
     for (let i=0; i<symbols.length; i++)
         clearStr = clearStr.replace(symbols[i], '');

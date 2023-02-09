@@ -10,6 +10,7 @@ if(isset($_FILES)) {
     $pieces = explode("/", $_SERVER['SCRIPT_FILENAME']);
     for($i=0;$i<count($pieces)-1;$i++)
         $path = $path . $pieces[$i] ."/";
+    // получение пути к файлу
 
 
 
@@ -17,15 +18,15 @@ if(isset($_FILES)) {
     for ($i = 0; $i < count($_FILES['file']['name']); $i++) {
         $uploadFile[$i] = $uploadDir . basename($_FILES['file']['name'][$i]);
         $fileChecked[$i] = false;
-        for ($j = 0; $j < count($allowedTypes); $j++) {
+        for ($j = 0; $j < count($allowedTypes); $j++) { // проверка файла на соответствие типу
             if ($_FILES['file']['type'][$i] == $allowedTypes[$j]) {
                 $fileChecked[$i] = true;
                 break;
             }
         }
-        if ($fileChecked[$i]&&move_uploaded_file($_FILES['file']['tmp_name'][$i], $uploadFile[$i])) {
+        if ($fileChecked[$i]&&move_uploaded_file($_FILES['file']['tmp_name'][$i], $uploadFile[$i])) {// сохранение в папку
 
-            if(isDepartmentFile($uploadFile[$i])||isUserFile($uploadFile[$i])){
+            if(isDepartmentFile($uploadFile[$i])||isUserFile($uploadFile[$i])){// проверка на соответсвие структуре файла
                 $successFiles++;
             }
             else
@@ -46,8 +47,9 @@ if(isset($_FILES)) {
 
 
             if(isDepartmentFile($fileName)){
-                print_r(isDepartmentFile($fileName));
-                $query = "LOAD DATA INFILE '$fileName'
+                print_r(isDepartmentFile($fileName)); //загружаю данные в бд указав разделитель ;
+                // первую строку игнорируем, строку с именанми столбцов
+                $query = "LOAD DATA INFILE '$fileName' 
                  INTO TABLE departments 
                  FIELDS TERMINATED BY ';' 
                  LINES TERMINATED BY '\n' 
@@ -77,7 +79,7 @@ if(isset($_FILES)) {
     echo "Uploaded " . $filesInDb . " files";
 }
 
-function isUserFile($fileName){
+function isUserFile($fileName){ // проверяю имена столбцов на соответсвие
 
     $fileContentArray= explode(";",file_get_contents($fileName));
 
@@ -92,7 +94,7 @@ function isUserFile($fileName){
 
 }
 
-function isDepartmentFile($fileName){
+function isDepartmentFile($fileName){ // проверяю имена столбцов на соответсвие
     $fileContentArray= explode(";",file_get_contents($fileName));
    $departmentStr = substr($fileContentArray[2],0,15);
     if($fileContentArray[0]=="XML_ID"&&$fileContentArray[1]=="PARENT_XML_ID"&&$departmentStr=="NAME_DEPARTMENT")
